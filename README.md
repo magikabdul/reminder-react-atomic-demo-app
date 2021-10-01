@@ -1,3 +1,5 @@
+[![buddy pipeline](https://app.buddy.works/magikabdul/reminder/pipelines/pipeline/351419/badge.svg?token=bd5f494dec9b2efbc72af8829d17ea562e7dd0c6de88ec5db0421525fcfe9503 "buddy pipeline")](https://app.buddy.works/magikabdul/reminder/pipelines/pipeline/351419)
+
 # Story
 
 I've created this app to get more practice with Atomic Design pattern.
