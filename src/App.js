@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import GlobalStyles from './theme/GlobalStyles';
-import theme from './theme/MainTheme';
+import theme from 'theme/MainTheme';
+import GlobalStyles from 'theme/GlobalStyles';
 
 const App = () => (
   <>
