@@ -24,7 +24,7 @@
         "react/jsx-props-no-spreading": [2, {"custom":  "ignore"}],
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
-        "linebreak-style": ["error", "windows"],
+        "linebreak-style": ["off"],
         "prettier/prettier": "error",
         "jsx-quotes": [2, "prefer-single"],
         "semi": ["error", "always"],
@@ -33,5 +33,12 @@
             "error",
             { "ImportDeclaration": { "multiline": true, "minProperties": 5 } }
         ]
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": ["src"]
+            }
+        }
     }
 }
