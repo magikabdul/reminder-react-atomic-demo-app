@@ -21,16 +21,10 @@ function getRgbValues(color) {
   return { r, g, b };
 }
 
-function getContrastColor(color, isHoverOrActive) {
+function getContrastColor(color) {
   const hexColor = getRgbValues(color);
-
   const ratio = (hexColor.r * 299 + hexColor.g * 587 + hexColor.b * 114) / 1000;
-
-  if (isHoverOrActive) {
-    return ratio >= 128 ? '#000' : '#fff';
-  }
-
-  return ratio >= 128 ? '#585858' : '#b8b8b8';
+  return ratio >= 128 ? '#000' : '#fff';
 }
 
 // eslint-disable-next-line import/prefer-default-export

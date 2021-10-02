@@ -13,6 +13,8 @@ const theme = {
     },
   },
 
+  fontFamily: "'Noto Sans Display', sans-serif",
+
   fontSize: {
     s: '12px',
     m: '16px',
