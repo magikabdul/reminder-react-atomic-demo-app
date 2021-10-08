@@ -58,9 +58,17 @@ const ErrorBox = styled.div`
   color: ${({ theme }) => theme.color.primary};
 `;
 
-const TextField = ({ value, onChange, label, required, error, errorMessage }) => (
+const TextField = ({ value, onChange, label, required, error, errorMessage, onBlur }) => (
   <Container>
-    <InputField id={label} type='text' placeholder='&nbsp;' value={value} onChange={onChange} error={error} />
+    <InputField
+      id={label}
+      type='text'
+      placeholder='&nbsp;'
+      value={value}
+      onChange={onChange}
+      error={error}
+      onBlur={onBlur}
+    />
     <Label htmlFor={label} required={required} error={error}>
       {label}
     </Label>
@@ -75,6 +83,7 @@ TextField.propTypes = {
   required: PropTypes.bool,
   error: PropTypes.bool,
   errorMessage: PropTypes.string,
+  onBlur: PropTypes.func,
 };
 
 TextField.defaultProps = {
@@ -83,6 +92,7 @@ TextField.defaultProps = {
   required: false,
   error: false,
   errorMessage: '',
+  onBlur: null,
 };
 
 export default TextField;
