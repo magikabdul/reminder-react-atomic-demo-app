@@ -137,7 +137,7 @@ AddEvent.propTypes = {
 
 AddEvent.defaultProps = {
   validate: false,
-  onSubmit: null,
+  onSubmit: undefined,
 };
 
 export default AddEvent;
